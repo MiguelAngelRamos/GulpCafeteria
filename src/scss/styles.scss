@@ -1,13 +1,6 @@
-$color: lightblue;
-$colorText: tomato;
-body {
-  background-color: $color;
-  color: $colorText;
-}
-.contenido {
-  color: blue;
-}
+@use 'header';
 
-.nav {
-  display: flex;
-}
+/*
+@use si compila
+@forward no compila
+*/

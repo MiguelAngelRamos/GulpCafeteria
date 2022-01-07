@@ -1,13 +1,27 @@
-body {
-  background-color: lightblue;
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+h1 {
   color: tomato;
 }
 
-.contenido {
-  color: blue;
+.contendor {
+  color: tomato;
 }
 
 .nav {
-  display: -ms-flexbox;
-  display: flex;
+  background-color: blue;
 }
+
+h5 {
+  color: blue;
+}
+
+/*
+@use si compila
+@forward no compila
+*/
