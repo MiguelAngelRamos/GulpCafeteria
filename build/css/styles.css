@@ -1,3 +1,13 @@
 body {
   background-color: lightblue;
+  color: tomato;
+}
+
+.contenido {
+  color: blue;
+}
+
+.nav {
+  display: -ms-flexbox;
+  display: flex;
 }

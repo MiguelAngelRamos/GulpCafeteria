@@ -4,13 +4,21 @@
   "description": "Cafe Time Sass y Gulp",
   "main": "index.js",
   "scripts": {
-    "start" : "gulp"
+    "start": "gulp"
   },
   "author": "Miguel Ramos",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.1",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.5",
     "sass": "^1.45.2"
-  }
+  },
+  "browserslist": [
+    "IE 10",
+    "last 1 version",
+    "> 1%"
+  ]
 }

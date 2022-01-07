@@ -2,6 +2,9 @@
  que se exportando mas de una función */
 const { src, dest, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+
 
 // compilar el codigo de Sass
 function compilarCss(done) {
@@ -13,7 +16,8 @@ function compilarCss(done) {
  // src es la función que me nos ayudar a indentificar la carpeta que contiene el archivo sass
  // dest es la funcion que nos va guardar el archivo compilado
  src('src/scss/styles.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(postcss([autoprefixer()]))
     .pipe(dest('build/css'));
 
  done();
