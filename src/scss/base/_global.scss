@@ -1,0 +1,17 @@
+@use 'variables'; // esto esta mal
+
+html {
+  // 10/16 = 0.625 * 100
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
+}
+
+// La fuente por defecto de un documento es de 16px;
+/* Queremos que 1 rem sea 10px"  */ 
+
+/* 5rem (5*16) son 80px
+  5rem (5*10) = 50px
+*/
+body {
+  font-size: 1.6rem; // 16px;
+}
