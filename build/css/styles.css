@@ -347,23 +347,51 @@ html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Queremos que 1 rem sea 10px"  */
-/* 5rem (5*16) son 80px
+/* 
+  5rem (5*16) son 80px
   5rem (5*10) = 50px
 */
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
-.header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+p {
+  color: #000;
 }
 
-h1 {
-  color: tomato;
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #5E311E;
 }
 
 /*
