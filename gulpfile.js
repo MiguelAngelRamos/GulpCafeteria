@@ -34,8 +34,6 @@ function compilarCss(done) {
   done();
 }
 
-
-
 function watchChange() {
   // watch esta atento a lo que pase en el archivo style.scss
   // y si hay cambios vuelve a llamar a la funcion css
