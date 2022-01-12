@@ -7,6 +7,7 @@ const autoprefixer = require('autoprefixer');
 
 // Images
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 
 // compilar el codigo de Sass
@@ -42,12 +43,19 @@ function watchChange() {
   watch('src/scss/**/*.scss',compilarCss)
 }
 
+function versionWebp() {
+  return src('src/img/**/*.{png,jpg}')
+  .pipe(webp())
+  .pipe(dest('build/img'))
+}
+
 function images(done) {
   src('src/img/**/*')
     .pipe(imagemin({optimizationLevel: 3}))
     .pipe(dest('build/img'))
   done();
 }
+exports.versionWebp = versionWebp;
 exports.images = images;
 exports.default = series(compilarCss, watchChange); // que se llama solo con el comando y sin especificar la tarea
 // exports.compilarCss = compilarCss;
