@@ -394,7 +394,14 @@ ul {
   background-color: #5E311E;
 }
 
-/*
-@use si compila
-@forward no compila
-*/
+.header {
+  padding: 5rem 0;
+}
+.header .container-header h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+.header-begin {
+  background-image: url(../img/header_inicio.webp);
+}

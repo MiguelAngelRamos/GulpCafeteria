@@ -1,3 +1,16 @@
-.header {
+@use 'base/variables' as v;
 
+.header {
+  padding: 5rem 0;
+
+  .container-header {
+    h1 {
+      text-align: center;
+      color: v.$white;
+    }
+  }
+}
+
+.header-begin {
+  background-image: url(../img/header_inicio.webp)
 }
