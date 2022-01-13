@@ -1,0 +1,8 @@
+@use 'base/variables' as v;
+
+.nav-primary {
+
+  a {
+    color: v.$white;
+  }
+}
